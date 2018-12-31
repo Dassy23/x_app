@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "xrp": "node ./node_modules/moneyd/bin/moneyd xrp:start --testnet",
+    "eth": "node ./node_modules/moneyd/bin/moneyd eth:start --testnet",
+    "conf_xrp": "node ./node_modules/moneyd/bin/moneyd xrp:configure --testnet",
+    "conf_eth": "node ./node_modules/moneyd/bin/moneyd eth:configure --testnet",
+    "debug": "node --inspect-brk ./node_modules/moneyd/bin/moneyd xrp:start --testnet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ilp-plugin": "^3.2.1",
+    "ilp-protocol-spsp": "^2.2.0",
+    "moneyd": "^4.3.0",
+    "moneyd-uplink-eth": "^1.1.1",
+    "moneyd-uplink-xrp": "^1.3.3",
+    "node-gyp": "^3.8.0",
+  }
+}

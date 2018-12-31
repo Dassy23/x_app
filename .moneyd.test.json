@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "uplinks": {
+    "xrp": {
+      "relation": "parent",
+      "plugin": "C:\\Users\\Dassy\\projects\\test\\node_modules\\ilp-plugin-xrp-asym-client\\index.js",
+      "assetCode": "XRP",
+      "assetScale": 9,
+      "balance": {
+        "minimum": "-Infinity",
+        "maximum": "20000000",
+        "settleThreshold": "5000000",
+        "settleTo": "10000000"
+      },
+      "sendRoutes": false,
+      "receiveRoutes": false,
+      "options": {
+        "currencyScale": 9,
+        "server": "btp+wss://UoXVcX6IRIaTU3sUCfOETH3Q9d3wut-yI8lW4V2gb8k:59f6f8cab9b5357f218987d4f78158971602012e9ddc0ead2f26308950bec6b4@btp.strata-ilsp-3.com:8083",
+        "secret": "ss4mpp434zEDGgaU7afMQKPdsUoET",
+        "address": "rLkPzXScu6XqercqNhqc2oNqD5kzeu7Qe7",
+        "xrpServer": "wss://s.altnet.rippletest.net:51233"
+      }
+    },
+    "eth": {
+      "relation": "parent",
+      "plugin": "C:\\Users\\Dassy\\projects\\test\\node_modules\\ilp-plugin-ethereum\\index.js",
+      "assetCode": "ETH",
+      "assetScale": 9,
+      "sendRoutes": false,
+      "receiveRoutes": false,
+      "options": {
+        "role": "client",
+        "ethereumPrivateKey": "D847C3D3F51549209ABCDC821B9FD318788DA64CEDFD487A7B1517CF10527305",
+        "ethereumProvider": "https://kovan.infura.io/bXIbx0x6ofEuDANTSeKI",
+        "outgoingChannelAmount": "10000000",
+        "balance": {
+          "maximum": "10000000",
+          "settleTo": "4000000",
+          "settleThreshold": "4000000"
+        },
+        "server": "btp+wss://eth:080bb9d50c879ea32017c47ece666e6a6ad63a7a6bdc765e3f09cdd51799d19b@btp.strata-ilsp-3.com:8081"
+      }
+    }
+  }
+}
